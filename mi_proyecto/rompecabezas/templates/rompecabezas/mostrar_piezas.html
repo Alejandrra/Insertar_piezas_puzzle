@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mostrar Piezas</title>
+</head>
+<body>
+    <h1>Piezas del Rompecabezas</h1>
+    <ul>
+        {% for pieza in piezas %}
+            <li>
+                <img src="{{ pieza.imagen.url }}" alt="Pieza {{ pieza.numero }}">
+                Número: {{ pieza.numero }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
